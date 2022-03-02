@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>HOJALATA TERNIUM</h1></a>
+        <!-- MENU -->
+        <nav>
+            <div> <a href="index.html"><img id="imagenLogo" src="Images\LogoTernium.jpg" alt="Logo de la empresa TERNIUM" /></a></div>
+            <div><a href="Templates\about.html">About</a></div>
+            <div><a href="Templates\bobinas.html">Bobinas</a></div>
+            <div><a href="Templates\contacto.html">Contacto</a></div>
+            <div><a href="Templates\login.html">Login</a></div>
+            <div><a href="Templates\register.html">Register</a></div>
+        </nav>
+    </header>
+    <main>
+
+        <section> <!-- Seccion BUSCADOR -->
+            <span><img  id="imagenBuscador" src="Images/bobina.ico" alt="Imagen representativa de una bobina de metal"/></span>
+            <!--BUSCADOR-->
+            <span class="buscador-Style">
+                <fieldset>
+                    <legend>BUSCADOR</legend>
+                    <!-- POR ID -->
+                    <span>
+                        <form action="" method="get">
+                            <label for="buscadorBobina">Search coil</label>
+                            <input type="text" placeholder="ID de bobina" id="buscadorBobina">
+                            <label for="Search"></label>
+                            <input type="submit" value="Search">
+                        </form>
+                    </span>
+                    <!--POR CALENDARIO-->
+                    <span>
+                        <form action="" method="get">
+                            <label for="buscadorFecha">Search date</label>
+                            <input type="date" placeholder="Fecha" id="buscadorFecha">
+                            <label for="Search"></label>
+                            <input type="submit" value="Search">
+                        </form>
+                    </span> 
+                </fieldset>
+            </span>  
+        </section>
+
+        <section id="mainPrincipal">
+            <!-- MENU LATERAL, vincula cada linea de produccion. -->
+            
+            <div id="mainPrincipal-MenuLineas">
+                <h2>Menu lineas</h2>
+                <ul>
+                    <li>TRL</li>
+                    <li>ESTAÑADO</li>
+                    <li>TEMPER2</li>
+                    <li>RECOCIDO</li>
+                    <li>LINEAS FINALES</li>
+                </ul>
+            </div>
+        
+            <!-- GRAFICOS -->
+            
+            
+            <img class="imagenGraficos1" src="./Images/imagen1.png" alt="imagen1">
+            <img class="imagenGraficos2" src="./Images/imagen2.jpg" alt="imagen2">
+            <img class="imagenGraficos3" src="./Images/imagen3.png" alt="imagen3">
+            <img class="imagenGraficos4" src="./Images/imagen4.png" alt="imagen4">
+ 
+            
+            <!-- MENSAJES DEL DIA-->
+            
+            <div id="mainPrincipal-MensajeDia">
+                <h2>MENSAJE DEL DIA DE LA GERENCIA</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veritatis commodi sint inventore optio expedita voluptatem assumenda reiciendis molestiae beatae enim consectetur autem nisi, asperiores sapiente iusto, sunt natus impedit.</p>
+            </div>
+            
+
+        </section>
+
+    </main>
+    <footer>
+        <span class="otraspaginas-style">
+            <h3>A otras páginas</h3>
+            <p><a href="http://172.17.20.89:5050/" rel="stylesheet" />Defect Analyzer TRL </a></p>
+        </span>
+
+        <span class="powered-style">
+            <p>Powered by Montagna Matias</p><i>LinkedIn</i>
+        </span>
+    </footer>
+</body>
+</html>

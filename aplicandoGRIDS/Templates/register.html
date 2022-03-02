@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>register</title>
+</head>
+<body>
+    <header>
+        <a href="..\index.html"><h1>HOJALATA TERNIUM</h1></a>
+        <nav>
+            <!-- MENU -->
+            <a href="..\index.html"><img id="imagenLogo" src="..\Images\LogoTernium.jpg" alt="Logo de la empresa TERNIUM" /></a>
+            <div class="menu">
+                <ul>
+                    <li class="menu-izquierda"><a href="./about.html">About</a></li>
+                    <li class="menu-izquierda"><a href="./bobinas.html">Bobinas</a></li>
+                    <li class="menu-izquierda"><a href="./contacto.html">Contacto</a></li>
+                    <li class="menu-derecha"><a href="./login.html">Login</a></li>
+                    <li class="menu-derecha"><a href="./register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <!-- MENU LATERAL, vincula cada linea de produccion con esta página -->
+            <div class="menu-lineas-style">
+                <h2>Menu lineas</h2>
+                <ul>
+                    <li>TRL</li>
+                    <li>ESTAÑADO</li>
+                    <li>TEMPER2</li>
+                    <li>RECOCIDO</li>
+                    <li>LINEAS FINALES</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+                <!-- CALENDARIO -->
+            <div class="calendario-Style">Calendario</div>
+        </section>
+        <!-- REGISTRO! -->
+        <section>
+            <span class="registro-Style">
+                <h2>
+                    REGISTRO
+                </h2>
+                <!-- FORMULARIO REGISTRO -->
+                <fieldset>
+                    <legend>Registro nuevo Usuario</legend>
+                    <form action="" method="get">
+
+                        <label for="registroNombreUsuario">Usuario</label>
+                        <input type="text" placeholder="Ingrese nombre Usuario" id="registroNombreUsuario">
+                        <br>
+                        <label for="registroMail">Mail</label>
+                        <input type="text" placeholder="Ingrese mail" id="registroMail">
+                        <br>
+                        <label for="passwordRegistro">Password</label>
+                        <input type="password" placeholder="Ingrese contraseña" id="passwordRegistro">
+                        <br>
+                        <label for="passwordRegistro">Password</label>
+                        <input type="password" placeholder="Ingrese nuevamente la contraseña" id="passwordRegistro">
+                        <br>
+                        <label for="aceptoTerminos">Acepto Terminos</label>
+                        <input type="checkbox" id="aceptoTerminos">
+                        <br>
+                        <input type="submit" name="Enviar">
+                    </form> 
+                </fieldset>
+            </span>
+        </section>
+
+    </main>
+    <footer>
+        <span class="otraspaginas-style">
+            <h3>A otras páginas</h3>
+            <p><a href="http://172.17.20.89:5050/" rel="stylesheet" />Defect Analyzer TRL</a></p>
+        </span>
+
+        <span class="powered-style">
+            <p>Powered by Montagna Matias</p><i>LinkedIn</i>
+        </span>
+    </footer>
+</body>
+</html>
