@@ -52,31 +52,31 @@ main{
     padding-bottom: 20px;
     
 }
-#mainPrincipal{
+/* .mainPrincipal{
     display: grid;
-    /* flex-direction: row; */
+    flex-direction: row;
     width: 100%;
-}
+} */
 
-#mainPrincipal-MenuLineas{
-    display: flex;
+.mainPrincipal-MenuLineas{
+    /* display: flex; */
     background-color: hsl(34, 4%, 62%) ;
-    width: 20%;
-    height: auto;
+    /* width: 20%; */
+    /* height: auto; */
 }
 
 
 
-#mainPrincipal-MensajeDia{
-    display: flex;
+.mainPrincipal-MensajeDia{
+    /* display: flex; */
     text-align: left;
     font-size: 20px;
     line-height: 1;
     background-color: hsl(34, 4%, 62%); 
-    width: 25%;
-    height: 50%;
+    /* width: 25%; */
+    /* height: 50%; */
     overflow: scroll;
-    margin-left: 70%;
+    /* margin-left: 70%; */
         
 }
 
@@ -108,8 +108,8 @@ footer{
 
 #imagenBuscador{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 #imagenLogo{
@@ -119,10 +119,10 @@ footer{
 }
 
 .about-Style{
-    display: inline-block;
+    /* display: inline-block; */
     background-color: hsl(34, 4%, 62%);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
     overflow: scroll;
     list-style:square;
 }
