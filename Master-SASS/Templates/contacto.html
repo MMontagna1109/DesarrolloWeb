@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="../Images/favicon.ico">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <title>contacto</title>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="../Images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Contacto</title>
+    </head>
 </head>
 <body>
     <header>
-        <a href="..\index.html"><h1>HOJALATA TERNIUM</h1></a>
+        <a href="../index.html"><h1 class="animate__animated animate__slideInUp">HOJALATA TERNIUM</h1></a>
+        <!-- MENU -->
         <nav>
-            <!-- MENU -->
-            <a href="..\index.html"><img id="imagenLogo" src="..\Images\LogoTernium.jpg" alt="Logo de la empresa TERNIUM" /></a>
-            <div class="menu">
-                <ul>
-                    <li class="menu-izquierda"><a href="./about.html">About</a></li>
-                    <li class="menu-izquierda"><a href="./bobinas.html">Bobinas</a></li>
-                    <li class="menu-izquierda"><a href="./contacto.html">Contacto</a></li>
-                    <li class="menu-derecha"><a href="./login.html">Login</a></li>
-                    <li class="menu-derecha"><a href="./register.html">Register</a></li>
-                </ul>
-            </div>
+            <div> <a href="../index.html"><img id="imagenLogo" src="../Images/LogoTernium.jpg" alt="Logo de la empresa TERNIUM" /></a></div>
+            <div><a href=".\about.html">About</a></div>
+            <div><a href=".\bobinas.html">Bobinas</a></div>
+            <div><a href=".\contacto.html">Contacto</a></div>
+            <div><a href=".\login.html">Login</a></div>
+            <div><a href=".\register.html">Register</a></div>
         </nav>
     </header>
     <main>
-
-        <section>
-            <!-- MENU LATERAL, vincula cada linea de produccion con esta página -->
-            <div class="menu-lineas-style">
-                <h2>Menu lineas</h2>
-                <ul>
-                    <li>TRL</li>
-                    <li>ESTAÑADO</li>
-                    <li>TEMPER2</li>
-                    <li>RECOCIDO</li>
-                    <li>LINEAS FINALES</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-                <!-- CALENDARIO -->
-            <div class="calendario-Style">Calendario</div>
-        </section>
-        <section>
-            <!-- SECCION CONTACTO -->
-            <div class="contacto-Style">
-                <h2>
-                    CONTACTO
-                </h2>
-                <p>
-                    En caso de dudas, sugerencias y/o consultas contactar al mail:
-                    MMONTAGN@ternium.com.ar
-
-                    INTERNO:
-                    57326
-                </p>
+        <section> <!-- Seccion BUSCADOR -->
+            <span><img  id="imagenBuscador" class="img-fluid" src="../Images/bobina.ico" alt="Imagen representativa de una bobina de metal"/></span>
+            <!--BUSCADOR-->
+            <div class="container buscador-Style"> <!-- container agregado de boostrap -->
+            <!-- <span class="buscador-Style"> -->
                 <fieldset>
-                    <legend>O deje su comentario</legend>
-                    <form action="" method="get">
-                        <textarea placeholder="Ingrese su comentario aqui" id="comentario" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
+                    <legend>BUSCADOR</legend>
+                    <!-- POR ID -->
+                    <span>
+                        <form action="" method="get">
+                            <label for="buscadorBobina">Search coil</label>
+                            <input type="text" placeholder="ID de bobina" id="buscadorBobina">
+                            <label for="Search"></label>
+                            <button class="btn btn-secondary" type="submit" value="Search">Search ID</button> <!-- Cambio de boton con boostrap -->
+                            
+                        </form>
+                    </span>
+                    <!--POR CALENDARIO-->
+                    <span>
+                        <form action="" method="get">
+                            <label for="buscadorFecha">Search date</label>
+                            <input type="date" placeholder="Fecha" id="buscadorFecha">
+                            <label for="Search"></label>
+                            <button class="btn btn-secondary" type="submit" value="Search">Search Date</button><!-- Cambio de boton con boostrap -->
+                            
+                        </form>
+                    </span> 
                 </fieldset>
+            </div> 
+        </section>
+        <section> <!-- Maquetiado ahora con boostrap! -->
+            <div class="container">
+                <div class="row">
+                    <!-- MENU LATERAL, vincula cada linea de produccion. -->
+                    <div class="col mainPrincipal-MenuLineas">
+                        <h2>Menu lineas</h2>
+                        <ul>
+                            <li>TRL</li>
+                            <li>ESTAÑADO</li>
+                            <li>TEMPER2</li>
+                            <li>RECOCIDO</li>
+                            <li>LINEAS FINALES</li>
+                        </ul>
+                    </div>
+                    <!-- SECCION CONTACTO -->
+                    <div class="col-6 contacto-Style">
+                        <h2>
+                            CONTACTO
+                        </h2>
+                        <p>
+                            En caso de dudas, sugerencias y/o consultas contactar al mail:
+                            MMONTAGN@ternium.com.ar
 
-
+                            INTERNO:
+                            57326
+                        </p>
+                        <fieldset>
+                            <legend>O deje su comentario</legend>
+                            <form action="" method="get">
+                                <textarea placeholder="Ingrese su comentario aqui" id="comentario" cols="30" rows="10"></textarea>
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </fieldset>
+                    </div>
+                    <!-- MENSAJE GERENCIA -->
+                    <div class="col mainPrincipal-MensajeDia">
+                        <h2>MENSAJE DEL DIA DE LA GERENCIA</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veritatis commodi sint inventore optio expedita voluptatem assumenda reiciendis molestiae beatae enim consectetur autem nisi, asperiores sapiente iusto, sunt natus impedit.</p>
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
     <footer>
         <span class="otraspaginas-style">

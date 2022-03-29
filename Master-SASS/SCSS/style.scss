@@ -46,6 +46,7 @@ p{
     padding: 0;
 }
 
+
 .buscador-Style{
     display: inline-block;
     width: 80%;
@@ -63,13 +64,33 @@ p{
     height: 70px;
 }
 
-.about-Style{
-    /* display: inline-block; */
-    background-color: hsl(34, 4%, 62%);
-    margin-left: 50px;
-    margin-right: 50px;
+@mixin estilo($colorFondo,$estiloLista,$margenIzq,$margenDer) { //estilo creado con mixin!!
+    
+    background-color:$colorFondo;
+    overflow: scroll;
+    list-style:$estiloLista;
+    margin-left: $margenIzq;
+    margin-right: $margenDer;
+
+}
+
+.style{ // Creado el estilo .style, en donde se puso además la variable $colorBackground
+    background-color:$colorBackground;
     overflow: scroll;
     list-style:square;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+//USANDO MIXIN!!
+.about-Style{ 
+    @include estilo($colorBackground,square , 50px ,50px ) //Usando además la variable global $colorBackground
+    /* display: inline-block; */
+    // background-color: hsl(34, 4%, 62%); HEREDADO DE ESTILO
+    // margin-left: 50px;HEREDADO DE ESTILO
+    // margin-right: 50px;HEREDADO DE ESTILO
+    // overflow: scroll;
+    // list-style:square; HEREDADO DE ESTILO
 }
 
 .calendario-Style{
@@ -78,31 +99,34 @@ p{
 }
 
 .contacto-Style{
-    display: inline-block;
-    background-color: hsl(34, 4%, 62%);
-    margin-left: 200px;
-    margin-right: 200px;
-    overflow: scroll;
-    list-style:square;
+    @extend .style;
+    // display: inline-block;
+    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
+    // margin-left: 50px;
+    // margin-right: 50px;
+    // overflow: scroll; HEREDADO DE STYLE
+    // list-style:square; HEREDADO DE STYLE
 }
 
 .login-Style{
-    display: inline-block;
-    background-color: hsl(34, 4%, 62%);
-    margin-left: 200px;
-    margin-right: 200px;
-    overflow: scroll;
-    list-style:square;
-
+    @extend .style;
+    // display: inline-block;
+    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
+    // margin-left: 200px;
+    // margin-right: 200px;
+    // overflow: scroll; HEREDADO DE STYLE
+    // list-style:square; HEREDADO DE STYLE
+ 
 }
 
 .registro-Style{
-    display: inline-block;
-    background-color: hsl(34, 4%, 62%);
-    margin-left: 200px;
-    margin-right: 200px;
-    overflow: scroll;
-    list-style:square;
+    @extend .style;
+    // display: inline-block;
+    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
+    // margin-left: 200px;
+    // margin-right: 200px;
+    // overflow: scroll; HEREDADO DE STYLE
+    // list-style:square; HEREDADO DE STYLE
 }
 img{
     height: 100%;

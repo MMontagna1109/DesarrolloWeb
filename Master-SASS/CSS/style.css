@@ -95,41 +95,24 @@ p {
   width: 70px;
   height: 70px; }
 
-.about-Style {
-  /* display: inline-block; */
+.style, .contacto-Style, .login-Style, .registro-Style {
   background-color: #a29f9a;
+  overflow: scroll;
+  list-style: square;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.about-Style {
+  background-color: #a29f9a;
+  overflow: scroll;
+  list-style: square;
   margin-left: 50px;
   margin-right: 50px;
-  overflow: scroll;
-  list-style: square; }
+  /* display: inline-block; */ }
 
 .calendario-Style {
   display: inline-block;
   align-items: right; }
-
-.contacto-Style {
-  display: inline-block;
-  background-color: #a29f9a;
-  margin-left: 200px;
-  margin-right: 200px;
-  overflow: scroll;
-  list-style: square; }
-
-.login-Style {
-  display: inline-block;
-  background-color: #a29f9a;
-  margin-left: 200px;
-  margin-right: 200px;
-  overflow: scroll;
-  list-style: square; }
-
-.registro-Style {
-  display: inline-block;
-  background-color: #a29f9a;
-  margin-left: 200px;
-  margin-right: 200px;
-  overflow: scroll;
-  list-style: square; }
 
 img {
   height: 100%;
@@ -150,7 +133,7 @@ a:hover {
     height: auto;
     grid-template-columns: 20% 80%;
     grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas: "Mlinea foto1" "Mlinea foto2" "Mlinea foto3" "Mlinea foto4" "Mlinea MenDia";
+    grid-template-areas: "Mlinea foto1" "Mlinea foto2" "Mlinea foto3" "Mlinea foto4" "Mlinea MenDia";
     align-content: space-between; }
   #mainPrincipal-MensajeDia {
     grid-area: MenDia; }
@@ -171,7 +154,7 @@ a:hover {
     height: auto;
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "Mlinea foto1 foto2 MenDia" "Mlinea foto3 foto4 MenDia";
+    grid-template-areas: "Mlinea foto1 foto2 MenDia" "Mlinea foto3 foto4 MenDia";
     align-content: space-between; }
   #mainPrincipal-MensajeDia {
     grid-area: MenDia; }
