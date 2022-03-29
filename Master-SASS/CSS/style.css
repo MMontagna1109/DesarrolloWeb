@@ -1,0 +1,187 @@
+header {
+  position: sticky;
+  top: 0px;
+  /* height: auto; */
+  background-color: #a29f9a; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 25px;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: __LinotypeUnivers Cond Heavy;
+  /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ }
+
+main {
+  padding-top: 20px;
+  background-color: #ff8300;
+  padding-bottom: 20px; }
+
+/* .mainPrincipal{
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+} */
+.mainPrincipal-MenuLineas {
+  /* display: flex; */
+  background-color: #a29f9a;
+  /* width: 20%; */
+  /* height: auto; */ }
+
+.mainPrincipal-MensajeDia {
+  /* display: flex; */
+  text-align: left;
+  font-size: 20px;
+  line-height: 1;
+  background-color: #a29f9a;
+  /* width: 25%; */
+  /* height: 50%; */
+  overflow: scroll;
+  /* margin-left: 70%; */ }
+
+footer {
+  background-color: #a29f9a; }
+
+.otraspaginas-style {
+  text-align: left; }
+
+.powered-style {
+  text-align: right; }
+
+h1 {
+  color: #ff8300;
+  /* Color sacado del css de TERNIUM , agregada variable con SCSS*/
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 50px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  /* Agregada variable con SCSS */
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  list-style: none; }
+
+li {
+  font-size: 25px;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: __LinotypeUnivers Cond Heavy;
+  /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ }
+
+p {
+  font-family: __LinotypeUnivers Cond_5; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.buscador-Style {
+  display: inline-block;
+  width: 80%; }
+
+#imagenBuscador {
+  display: inline-block;
+  width: 30px;
+  height: 30px; }
+
+#imagenLogo {
+  display: inline-block;
+  width: 70px;
+  height: 70px; }
+
+.about-Style {
+  /* display: inline-block; */
+  background-color: #a29f9a;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: scroll;
+  list-style: square; }
+
+.calendario-Style {
+  display: inline-block;
+  align-items: right; }
+
+.contacto-Style {
+  display: inline-block;
+  background-color: #a29f9a;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow: scroll;
+  list-style: square; }
+
+.login-Style {
+  display: inline-block;
+  background-color: #a29f9a;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow: scroll;
+  list-style: square; }
+
+.registro-Style {
+  display: inline-block;
+  background-color: #a29f9a;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow: scroll;
+  list-style: square; }
+
+img {
+  height: 100%;
+  width: 100%;
+  transition: all .7s; }
+
+/* HOVERS */
+img:hover {
+  transform: scale(1.1); }
+
+a:hover {
+  text-decoration: underline;
+  color: #c2550d; }
+
+/* Version MOBILE */
+@media only screen and (max-width: 600px) {
+  #mainPrincipal {
+    height: auto;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "Mlinea foto1" "Mlinea foto2" "Mlinea foto3" "Mlinea foto4" "Mlinea MenDia";
+    align-content: space-between; }
+  #mainPrincipal-MensajeDia {
+    grid-area: MenDia; }
+  .imagenGraficos1 {
+    grid-area: foto1; }
+  .imagenGraficos2 {
+    grid-area: foto2; }
+  .imagenGraficos3 {
+    grid-area: foto3; }
+  .imagenGraficos4 {
+    grid-area: foto4; }
+  #mainPrincipal-MenuLineas {
+    grid-area: Mlinea; } }
+
+/* Version Desktop */
+@media only screen and (min-width: 600px) {
+  #mainPrincipal {
+    height: auto;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "Mlinea foto1 foto2 MenDia" "Mlinea foto3 foto4 MenDia";
+    align-content: space-between; }
+  #mainPrincipal-MensajeDia {
+    grid-area: MenDia; }
+  .imagenGraficos1 {
+    grid-area: foto1; }
+  .imagenGraficos2 {
+    grid-area: foto2; }
+  .imagenGraficos3 {
+    grid-area: foto3; }
+  .imagenGraficos4 {
+    grid-area: foto4; }
+  #mainPrincipal-MenuLineas {
+    grid-area: Mlinea; } }
