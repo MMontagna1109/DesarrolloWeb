@@ -1,0 +1,23 @@
+index
+<meta name="keywords" content="techint, acero, ternium, gerencia, hojalata">
+<title>Home - Gerencia de Hojalata</title>
+<meta name="description" content="Página principal de la Gerencia de Hojalata, en donde se podrán encontrar todos los procesos con sus respectivas datos y estadisticas. Además contará con un buscador de bobinas. También se podrá acceder a las distintas aplicaciones propias del sector, como Defect Analyzer TRL, o DFormEstanado">
+
+about
+    <meta name="keywords" content="techint, acero, ternium, gerencia, hojalata, about, , informacion">
+    <title>About - Gerencia de Hojalata</title>
+<meta name="description" content="Seccion donde se podran ver los distintos procesos activos en la pagina, así como tambien los futuros procesos a agregar.>
+
+contacto
+<meta name="keywords" content="techint, acero, ternium, gerencia, hojalata, contacto, mail, numero, LinkedIn">
+    <title>Contacto - Gerencia de Hojalata</title>
+<meta name="description" content="Seccion donde podrás encontrar las distintas formas para comunicarse con la gerencia, y/o con el administrador de la pagina, para despejar dudas, hacer sugerencias, o realizar petisiones">
+
+register
+        <meta name="keywords" content="techint, acero, ternium, gerencia, hojalata, register, registro, cuenta nueva">
+	<title>Registro - Gerencia de Hojalata</title>
+<meta name="description" content="Formulario para registrarse dentro de la pagina, para poder navegar con todas las caracteristicas como asi tambien tener acceso a los distintos usuarios y crear grupos de trabajo o hacer sugerencias.">
+login
+        <meta name="keywords" content="techint, acero, ternium, gerencia, hojalata, cuenta, nueva, login, ingresar">
+<title>Ingresar - Gerencia de Hojalata</title>
+<meta name="description" content="Formulario para iniciar seccion dentro de la pagina, para poder navegar con todas las caracteristicas como asi tambien tener acceso a los distintos usuarios y crear grupos de trabajo o hacer sugerencias.">
