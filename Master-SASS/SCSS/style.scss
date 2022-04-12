@@ -8,7 +8,6 @@ h1{
     font-style:oblique;
     font-weight:bolder;
     font-size: 50px;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: $fuentePaginaTernium; /* Agregada variable con SCSS */
     text-align: center;
 }
@@ -25,7 +24,6 @@ ul{
 }
 li{
     font-size: 25px;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: __LinotypeUnivers Cond Heavy; /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */
 }
 
@@ -85,12 +83,7 @@ p{
 //USANDO MIXIN!!
 .about-Style{ 
     @include estilo($colorBackground,square , 50px ,50px ) //Usando además la variable global $colorBackground
-    /* display: inline-block; */
-    // background-color: hsl(34, 4%, 62%); HEREDADO DE ESTILO
-    // margin-left: 50px;HEREDADO DE ESTILO
-    // margin-right: 50px;HEREDADO DE ESTILO
-    // overflow: scroll;
-    // list-style:square; HEREDADO DE ESTILO
+
 }
 
 .calendario-Style{
@@ -100,34 +93,17 @@ p{
 
 .contacto-Style{
     @extend .style;
-    // display: inline-block;
-    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
-    // margin-left: 50px;
-    // margin-right: 50px;
-    // overflow: scroll; HEREDADO DE STYLE
-    // list-style:square; HEREDADO DE STYLE
 }
 
 .login-Style{
     @extend .style;
-    // display: inline-block;
-    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
-    // margin-left: 200px;
-    // margin-right: 200px;
-    // overflow: scroll; HEREDADO DE STYLE
-    // list-style:square; HEREDADO DE STYLE
  
 }
 
 .registro-Style{
     @extend .style;
-    // display: inline-block;
-    // background-color: hsl(34, 4%, 62%); HEREDADO DE STYLE
-    // margin-left: 200px;
-    // margin-right: 200px;
-    // overflow: scroll; HEREDADO DE STYLE
-    // list-style:square; HEREDADO DE STYLE
 }
+
 img{
     height: 100%;
     width: 100%;

@@ -1,7 +1,6 @@
 header {
   position: sticky;
   top: 0px;
-  /* height: auto; */
   background-color: #a29f9a; }
 
 nav {
@@ -10,36 +9,27 @@ nav {
   justify-content: space-around;
   width: 100%;
   font-size: 25px;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family: __LinotypeUnivers Cond Heavy;
-  /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ }
+  font-family: __LinotypeUnivers Cond Heavy; /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ 
+  }
 
 main {
   padding-top: 20px;
   background-color: #ff8300;
   padding-bottom: 20px; }
 
-/* .mainPrincipal{
-    display: grid;
-    flex-direction: row;
-    width: 100%;
-} */
+
 .mainPrincipal-MenuLineas {
-  /* display: flex; */
+
   background-color: #a29f9a;
-  /* width: 20%; */
-  /* height: auto; */ }
+ }
 
 .mainPrincipal-MensajeDia {
-  /* display: flex; */
   text-align: left;
   font-size: 20px;
   line-height: 1;
   background-color: #a29f9a;
-  /* width: 25%; */
-  /* height: 50%; */
   overflow: scroll;
-  /* margin-left: 70%; */ }
+ }
 
 footer {
   background-color: #a29f9a; }
@@ -51,12 +41,10 @@ footer {
   text-align: right; }
 
 h1 {
-  color: #ff8300;
-  /* Color sacado del css de TERNIUM , agregada variable con SCSS*/
+  color: #ff8300; /* Color sacado del css de TERNIUM , agregada variable con SCSS*/
   font-style: oblique;
   font-weight: bolder;
   font-size: 50px;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   /* Agregada variable con SCSS */
   text-align: center; }
@@ -70,9 +58,8 @@ ul {
 
 li {
   font-size: 25px;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family: __LinotypeUnivers Cond Heavy;
-  /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ }
+  font-family: __LinotypeUnivers Cond Heavy; /* Fuente utilizada en el portal propio de TERNIUM, sacado del css */ 
+  }
 
 p {
   font-family: __LinotypeUnivers Cond_5; }
@@ -108,7 +95,7 @@ p {
   list-style: square;
   margin-left: 50px;
   margin-right: 50px;
-  /* display: inline-block; */ }
+  }
 
 .calendario-Style {
   display: inline-block;

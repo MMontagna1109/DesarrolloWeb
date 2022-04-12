@@ -4,30 +4,22 @@ main{
     padding-bottom: 20px;
     
 }
-/* .mainPrincipal{
-    display: grid;
-    flex-direction: row;
-    width: 100%;
-} */
+
 
 .mainPrincipal-MenuLineas{
-    /* display: flex; */
+
     background-color: hsl(34, 4%, 62%) ;
-    /* width: 20%; */
-    /* height: auto; */
+
 }
 
 
 
 .mainPrincipal-MensajeDia{
-    /* display: flex; */
+
     text-align: left;
     font-size: 20px;
     line-height: 1;
     background-color: hsl(34, 4%, 62%); 
-    /* width: 25%; */
-    /* height: 50%; */
     overflow: scroll;
-    /* margin-left: 70%; */
         
 }
